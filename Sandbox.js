@@ -29,7 +29,10 @@ async function startProgram() {
 
 
 // Figure 8
-for (var _i1 = 0; _i1 < 8; _i1++) {
-	await roll(360, 15, 4)
-	await roll(-360, 15, 4)
+async function startProgram() {
+	for (var _i1 = 0; _i1 < 8; _i1++) {
+		setSpeed(50)
+		await spin(360,5)
+		await spin(-360,5)
+	}
 }
