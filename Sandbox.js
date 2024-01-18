@@ -16,13 +16,24 @@ async function startProgram() {
 
 // Square w/ different colors for each line
 
+async function startProgram() {
+	for (var _i1 = 0; _i1 < 8; _i1++) {
+		setMainLed()
+		await roll(90, 50, 2)
+		setMainLed()
+		await roll(180, 50, 2)	
+		setMainLed()
+		await roll(270, 50, 2)	
+		setMainLed()
+		await roll(360, 50, 2)	
+		
+	
 
-
-
-
+	}
+}
 
 // Square w/ different colors & Sound for each line
-
+/*
 
 
 
@@ -36,3 +47,4 @@ async function startProgram() {
 		await spin(-360,5)
 	}
 }
+*/
