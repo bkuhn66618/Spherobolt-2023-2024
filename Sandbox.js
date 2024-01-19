@@ -18,13 +18,13 @@ async function startProgram() {
 //Date:1.18.2024
 async function startProgram() {
 	for (var _i1 = 0; _i1 < 8; _i1++) {
-		setMainLed(209,19,19)
+		setMainLed({r:209,g:19,b:19})
 		await roll(90, 50, 2)
-		setMainLed(255,205,3)
+		setMainLed({r:255,g:205,b:3})
 		await roll(180, 50, 2)	
-		setMainLed(78,255,3)
+		setMainLed({r:78,g:255,b:3})
 		await roll(270, 50, 2)	
-		setMainLed(54,190,227)
+		setMainLed({r:54,g:190,b:227})
 		await roll(360, 50, 2)	
 		
 	
