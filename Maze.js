@@ -3,16 +3,16 @@
 // Date: 1.22.2024
 // Program: Maze
 // Bolt-ID: SB-F28B
-
-//Intial Start Message
+/*
+//initial start message
 async function startProgram() {
 	await scrollMatrixText('Start!', {r:9, g:255, b:123}, 25, true)
 	await speak('Start')
 }
-
-//Blue LED
-
+*/
+//Roll to Blue then Blue LED
 async function startProgram() {
-	await roll(0, 110, 1.7)
-
+	await roll(0, 52.5, 3)
+	setMainLed({r:1, g:1, b:253})
+	await scrollMatrixText('blue', {r:2, g:2, b:123}, 25, true)
 }
