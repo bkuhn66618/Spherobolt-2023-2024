@@ -21,6 +21,7 @@ async function startProgram() {
 	await Sound.play(true)
 	//roll to red, around corner then red LED
 	await roll(180,68,1)
+	await delay(1)
 	await roll(225, 68, 1)
 	setMainLed({r:224, g:1, b:0})
 	//sound 2
@@ -29,7 +30,14 @@ async function startProgram() {
 	await roll(45,68,1)
 	await delay(1)
 	await Sound.play(true)
-
+	//Green LED
+	await roll(135,45,1)
+	await delay(1)
+	await roll(225,45,1)
+	await delay(1)
+	await roll(135,50,1)
+	await scrollMatrixText('green', {r:2, g: 251, b:2}, 25, true)
+	setMainLed({r:5, g:215, b:5})
 	
 	//reset
 	await roll(0,0,2)
