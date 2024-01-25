@@ -38,6 +38,10 @@ async function startProgram() {
 	await roll(135,50,1)
 	await scrollMatrixText('green', {r:2, g: 251, b:2}, 25, true)
 	setMainLed({r:5, g:215, b:5})
+	//Sound 3 and Purple
+	await roll(45,75,1)
+	await delay(1)
+	await roll(0,50,1)
 	
 	//reset
 	await roll(0,0,2)
